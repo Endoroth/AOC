@@ -1,0 +1,5 @@
+C:\!priv\AOC\Advent\Helper\bin\Debug\Helper.dll
+C:\!priv\AOC\Advent\Helper\bin\Debug\Helper.pdb
+C:\!priv\AOC\Advent\Helper\obj\Debug\Helper.csprojResolveAssemblyReference.cache
+C:\!priv\AOC\Advent\Helper\obj\Debug\Helper.dll
+C:\!priv\AOC\Advent\Helper\obj\Debug\Helper.pdb

@@ -1,0 +1,8 @@
+C:\!priv\AOC\Advent\DagFan1\bin\Debug\DagFan1.exe.config
+C:\!priv\AOC\Advent\DagFan1\obj\Debug\DagFan1.csprojResolveAssemblyReference.cache
+C:\!priv\AOC\Advent\DagFan1\bin\Debug\DagFan1.exe
+C:\!priv\AOC\Advent\DagFan1\bin\Debug\DagFan1.pdb
+C:\!priv\AOC\Advent\DagFan1\bin\Debug\Helper.dll
+C:\!priv\AOC\Advent\DagFan1\bin\Debug\Helper.pdb
+C:\!priv\AOC\Advent\DagFan1\obj\Debug\DagFan1.exe
+C:\!priv\AOC\Advent\DagFan1\obj\Debug\DagFan1.pdb
