@@ -1,8 +1,0 @@
-C:\!priv\AOC\Advent\DayTemplate\bin\Debug\Advent.exe.config
-C:\!priv\AOC\Advent\DayTemplate\bin\Debug\Advent.exe
-C:\!priv\AOC\Advent\DayTemplate\bin\Debug\Advent.pdb
-C:\!priv\AOC\Advent\DayTemplate\bin\Debug\Helper.dll
-C:\!priv\AOC\Advent\DayTemplate\bin\Debug\Helper.pdb
-C:\!priv\AOC\Advent\DayTemplate\obj\Debug\DayTemplate.csprojResolveAssemblyReference.cache
-C:\!priv\AOC\Advent\DayTemplate\obj\Debug\Advent.exe
-C:\!priv\AOC\Advent\DayTemplate\obj\Debug\Advent.pdb

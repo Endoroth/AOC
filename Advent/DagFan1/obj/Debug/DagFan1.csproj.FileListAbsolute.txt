@@ -6,3 +6,11 @@ C:\!priv\AOC\Advent\DagFan1\bin\Debug\Helper.dll
 C:\!priv\AOC\Advent\DagFan1\bin\Debug\Helper.pdb
 C:\!priv\AOC\Advent\DagFan1\obj\Debug\DagFan1.exe
 C:\!priv\AOC\Advent\DagFan1\obj\Debug\DagFan1.pdb
+D:\Github\AOC\Advent\DagFan1\bin\Debug\DagFan1.exe.config
+D:\Github\AOC\Advent\DagFan1\obj\Debug\DagFan1.exe
+D:\Github\AOC\Advent\DagFan1\obj\Debug\DagFan1.pdb
+D:\Github\AOC\Advent\DagFan1\bin\Debug\DagFan1.exe
+D:\Github\AOC\Advent\DagFan1\bin\Debug\DagFan1.pdb
+D:\Github\AOC\Advent\DagFan1\bin\Debug\Helper.dll
+D:\Github\AOC\Advent\DagFan1\bin\Debug\Helper.pdb
+D:\Github\AOC\Advent\DagFan1\obj\Debug\DagFan1.csprojResolveAssemblyReference.cache
