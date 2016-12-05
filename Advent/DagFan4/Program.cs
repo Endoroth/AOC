@@ -18,8 +18,9 @@ namespace DagFan4
     {
         private static void Main()
         {
-            var input = Utilities.GetInput(4);
+           var input = Utilities.GetInput(4);
 
+            List<string> test = new List<string>();
             List<string> inputList = new List<string>();
 
             inputList = input.Split(new[]
@@ -28,11 +29,13 @@ namespace DagFan4
                                           }, StringSplitOptions.RemoveEmptyEntries).ToList();
 
             var totalID = 0;
-            
+            string alfhab = "abcdefghijklmnopqrstuvwxyza";
+
             foreach (var turn in inputList)
             {
                 List<string> checkletters = new List<string>();
                 List<string> turnlist = new List<string>();
+
 
                 var ID = Int32.Parse(Regex.Match(turn, @"\d+").Value);
                 var len = turn.Length;
@@ -43,13 +46,25 @@ namespace DagFan4
                 {
                     checkletters.Add(checksum.Substring(i, 1));
                 }
-
+                List<string> tomtelista = new List<string>();
+                
                 for (var l = 0; l < turn.Length; l++)
                 {
                     var tempval = turn.Substring(l, 1);
+                    char pluschar = tempval[0];
                     if (Regex.IsMatch(tempval, @"^[a-zA-Z]+$"))
                     {
                         turnlist.Add(tempval);
+
+                        int index = char.ToUpper(pluschar) - 65; //0 till 1bas?
+                        for (var idx = 0; idx < ID; idx++)
+                        {
+                            index++;
+                            if (index == 27) { index = 1; }
+                        }                         
+                        
+                        tomtelista.Add(alfhab.Substring(index, 1));
+
                     }
                     
                 }
@@ -117,15 +132,32 @@ namespace DagFan4
                 {
                     totalID = totalID + ID;
                 }
-                
-              }
+
+
+                //leta efter nordpolen
+                var northp = "";
+                foreach (var nord in tomtelista)
+                {
+                    northp = northp + nord;
+                }
+
+                if (northp.Contains("north"))
+                {
+                    Console.WriteLine("nordpolen" + ID);
+
+                }
+                test.Add(northp + " " + ID.ToString());
+                                
+            }
 
             Console.WriteLine(totalID);
             //using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\!priv\AOC\Advent\Output\DagFan1.txt"))
             using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"D:\Github\AOC\Advent\Output\DagFan4.txt"))
             {
-                file.WriteLine(totalID.ToString());
-
+                foreach (var np in test)
+                { 
+                file.WriteLine(np);
+                }
             }
 
             //Knuub
