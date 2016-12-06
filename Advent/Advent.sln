@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DagFan4", "DagFan4\DagFan4.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DagFan5", "DagFan5\DagFan5.csproj", "{50411D22-5D91-4B1C-957D-14136AC7ABBD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DagFan6", "ConsoleApplication2\DagFan6.csproj", "{59310EAB-8A27-46E5-8CA5-20B0496EF615}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{50411D22-5D91-4B1C-957D-14136AC7ABBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50411D22-5D91-4B1C-957D-14136AC7ABBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50411D22-5D91-4B1C-957D-14136AC7ABBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59310EAB-8A27-46E5-8CA5-20B0496EF615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59310EAB-8A27-46E5-8CA5-20B0496EF615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59310EAB-8A27-46E5-8CA5-20B0496EF615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59310EAB-8A27-46E5-8CA5-20B0496EF615}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
