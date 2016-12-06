@@ -1,1 +1,0 @@
-D:\Github\AOC\Advent\ConsoleApplication2\bin\Debug\ConsoleApplication2.exe.config
