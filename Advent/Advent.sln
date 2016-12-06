@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DagFan4", "DagFan4\DagFan4.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DagFan5", "DagFan5\DagFan5.csproj", "{50411D22-5D91-4B1C-957D-14136AC7ABBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DagFan6", "ConsoleApplication2\DagFan6.csproj", "{59310EAB-8A27-46E5-8CA5-20B0496EF615}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DagFan6", "DagFan6\DagFan6.csproj", "{59310EAB-8A27-46E5-8CA5-20B0496EF615}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
