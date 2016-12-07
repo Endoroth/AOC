@@ -6,3 +6,6 @@ D:\Github\AOC\Advent\DagFan5\bin\Debug\Helper.dll
 D:\Github\AOC\Advent\DagFan5\bin\Debug\Helper.pdb
 D:\Github\AOC\Advent\DagFan5\obj\Debug\DagFan5.exe
 D:\Github\AOC\Advent\DagFan5\obj\Debug\DagFan5.pdb
+C:\!priv\AOC\Advent\DagFan5\bin\Debug\DagFan5.exe.config
+C:\!priv\AOC\Advent\DagFan5\obj\Debug\DagFan5.exe
+C:\!priv\AOC\Advent\DagFan5\obj\Debug\DagFan5.pdb
