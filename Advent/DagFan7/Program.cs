@@ -31,41 +31,42 @@ namespace DagFan7
 
             foreach (var turn in inputList)
             {
-                countrow++;             
-                var split = turn.Split(sp);
-                var check = turn.StartsWith("[");
+                countrow++;
+                var turn2 = turn.Replace("[", "[_");            
+                var split = turn2.Split(sp);
                 bool valok = false;
-                bool fukka = false;
+                bool throwout = false;
+                var lineok = 0;
                 for (var i = 0; i < split.Count(); i++)
                 {
                     valok = false;
 
-                    if (!check)
-                    {
-                        //var valx = new Regex(@"(.)(?!\1)(.)\2\1").Match(testval).Groups[0].Value;
-                        valok = new Regex(@"(.)(?!\1)(.)\2\1").IsMatch(split[i]);
-                    }
-                    else //om inte check 
-                    {
-                        valok = new Regex(@"(.)(?!\1)(.)\2\1").IsMatch(split[i]);
-                        
-                        if (valok)
-                        {
-                            valok =false;
-                            fukka = true;
-                        }
-                    }
-                    check = !check;
+                    //var valx = new Regex(@"(.)(?!\1)(.)\2\1").Match(testval).Groups[0].Value;
+                    valok = new Regex(@"(.)(?!\1)(.)\2\1").IsMatch(split[i]);
+                    throwout = new Regex(@"([\w])\1+\1+\1+").IsMatch(split[i]);
 
-                    if (valok && !fukka)
+                    if ( throwout || (valok && split[i].Contains("_")))
                     {
-                        totalCount++;
+                        lineok = 0;                     
                         break;
+                    }
+                    if (valok && !throwout && !split[i].Contains("_"))
+                    {
+                        lineok = 1;
                     }
                     
                 }
-                var valx = new Regex(@"(.)(?!\1)(.)\2\1").Match(turn).Groups[0].Value;
+
+                totalCount +=lineok;
+                var valx = "";
                 
+
+                //write debug info
+                for (var i = 0; i < split.Count(); i++)
+                {
+                    valx = valx + new Regex(@"(.)(?!\1)(.)\2\1").Match(split[i]).Groups[0].Value;
+                }
+                //write in console only if changed
                 if (totalCount != totalCount_old)
                 {
                     Console.WriteLine(countrow + "  " + valx + "  " + totalCount);
@@ -74,7 +75,8 @@ namespace DagFan7
                 }
                 totalCount_old = totalCount;
             }
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"C:\!priv\AOC\Advent\Output\DagFan7.txt"))
+            //write file
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"D:\Github\AOC\Advent\Output\DagFan7.txt"))
             {
                 foreach (var line in skriv)
                 {

@@ -1,0 +1,8 @@
+D:\Github\AOC\Advent\DagFan7\bin\Debug\DagFan7.exe.config
+D:\Github\AOC\Advent\DagFan7\bin\Debug\DagFan7.exe
+D:\Github\AOC\Advent\DagFan7\bin\Debug\DagFan7.pdb
+D:\Github\AOC\Advent\DagFan7\bin\Debug\Helper.dll
+D:\Github\AOC\Advent\DagFan7\bin\Debug\Helper.pdb
+D:\Github\AOC\Advent\DagFan7\obj\Debug\DagFan7.csprojResolveAssemblyReference.cache
+D:\Github\AOC\Advent\DagFan7\obj\Debug\DagFan7.exe
+D:\Github\AOC\Advent\DagFan7\obj\Debug\DagFan7.pdb

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +15,6 @@ namespace DagFan6
 {
     internal static class Day
     {
-
         private static void Main()
         {
             var input = Utilities.GetInput(6);
@@ -26,7 +24,6 @@ namespace DagFan6
                                           {
                                               "\r\n"
                                           }, StringSplitOptions.RemoveEmptyEntries).ToList();
-
 
             string[] msg0 = new string[inputList.Count()];
             string[] msg1 = new string[inputList.Count()];
