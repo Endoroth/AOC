@@ -14,15 +14,14 @@ namespace DagFan9
         private static void Main()
         {
             var input = Utilities.GetInput(9);
-            string output = "";
             var lenght = 1;
-            var timesm = 2;
-            var compressed = 0;
+            var timesm = 1;
+            long count = 0;
+            long countcheck = 0;
             //for ( var i = 0; i < input.Length; i++)
             while (input.Length > 0 )
             {
                 var checkletter = input.Substring(0, 1);
-                var checkL = new Regex(@"[A-Z]+").IsMatch(checkletter);
                 var subEnd = 0;
                 //Check ( and count multiply
                 if (checkletter == "(" )
@@ -33,49 +32,51 @@ namespace DagFan9
                     timesm = int.Parse(input.Substring(subX + 1, (subEnd - subX) - 1 ));
                     
                 }
-                checkletter = input.Substring(0, 1);
-                checkL = new Regex(@"[A-Z]+").IsMatch(checkletter);
-                
-               // addsub1 = input.Substring(subEnd + 1, lenght + count + 1);
-                var addstring = "";
-                for (var q = 1; q < timesm; q++)
+                else
                 {
-                    if (checkL)
+                    lenght = input.IndexOf("(", 0);
+                    if (lenght == -1 )
                     {
-                        output = output + input.Substring(0, lenght);
-                        compressed++;
-                    }
-                    else if (checkletter == "(")
-                    {
-                        var addsub1 = input.Substring(subEnd + 1, lenght);
-                        addstring = addstring + addsub1;
+                        lenght = input.Length;
                     }
                 }
-                if (checkL)
+                                
+                if (subEnd > 0 )
+                { subEnd += 1; }
+                var addstr = "";
+                for (var q = 0; q < timesm; q++)
                 {
-                    input = input.Substring(lenght);
+                    addstr = addstr + input.Substring(subEnd, lenght);
+
+                }
+
+                count += addstr.Length;
+
+                if (checkletter == "(")
+                {
+                    input = addstr + input.Substring(subEnd + lenght);
                 }
                 else
                 {
-                    input = input.Substring(subEnd+1);
+                    input = input.Substring(subEnd + lenght);
                 }
-                for (var i = 0; i < addstring.Length; i++)
-                {
-                    checkletter = input.Substring(0, 1);
-                    checkL = new Regex(@"[A-Z]+").IsMatch(checkletter);
-                    if (checkL)
-                    {
-                        output = output + input.Substring(0, lenght);
-                        compressed++;
-                    }
-                }
-
-                timesm = 2;
+                timesm = 1;
                 lenght = 1;
 
-                Console.WriteLine(input.Length);
+                if (count > countcheck)
+                {
+                    Console.WriteLine(input.Length + "    " + count);
+                    countcheck += 1000000;
+                }
             }
-            Console.WriteLine(output.Length + "     " + compressed);
+
+            Console.WriteLine(input.Length + "    " + count);
+
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"D:\Github\AOC\Advent\Output\DagFan9.txt"))
+            {
+                    file.WriteLine(count);
+                
+            }
             //Knuub
             Console.ReadKey();
             
